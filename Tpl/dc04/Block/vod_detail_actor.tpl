@@ -1,0 +1,2 @@
+<php>$item_list = ff_mysql_vod('actor:'.ff_array(explode(',',$vod_actor),0).';limit:6;cache_name:default;cache_time:default;order:vod_id;sort:desc');</php>
+<include file="Block:vod_item_img_vertical" />

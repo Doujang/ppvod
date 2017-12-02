@@ -1,0 +1,121 @@
+.container {
+	width: 1020px !important;
+	max-width: none !important;
+}
+.ff-btn-play,.btn-success {
+	background:#e73c31;
+	color:#FFF;
+	border:#e73c31;
+}
+.ff-btn-play:hover,.btn-success:hover {
+	color:#FFF;
+	background: #930;
+}
+.ff-btn-play:active, .ff-btn-play:visited,.btn-success:active,.btn-success:visited {
+	color:#FFF;
+}
+
+.nav-pills>li{
+	padding-right:5px;
+}
+.nav-pills>li>a{
+	background-color: #eee;
+}
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+  color: #fff;
+  background-color: #dd0d0b;
+}
+html, body {
+	overflow-x: hidden;
+}
+body, button, input, select, textarea {
+	font-family: Microsoft YaHei, Helvetica, '宋体', Tahoma, Arial, "\5b8b\4f53", sans-serif;
+}
+a {
+	color:#333;
+	text-decoration:none
+}
+a:hover, a:focus {
+	color:#e73c31;
+}
+.breadcrumb, .table {
+	font-size:1.1em;
+}
+.page-header {
+	margin:0 0 10px 0;
+	padding:0;
+}
+.modal-scrollbar-measure {
+	display:none
+}
+/*返回顶部*/
+.ff-totop {
+	position: fixed;
+	right: 10px;
+	bottom: 10px;
+	background:#e73c31;
+	color: #fff;
+	text-align: center;
+	border-radius: 2px;
+	z-index: 1;
+	display: block;
+	display: none;
+	width:50px;
+	height:50px;
+	line-height:50px
+}
+.ff-totop:hover {
+	background: #930;
+	color: #FFF;
+}
+.ff-totop i {
+	padding:5px 10px;
+}
+/*register*/
+.ff-user-register{
+}
+.ff-user-register h2{
+	padding:20px 0;
+}
+.ff-user-register h2 a:hover{
+	text-decoration:none
+}
+.ff-user-register h5 a{
+	margin:0 10px;	
+}
+/*user-login*/
+.ff-user-login{
+}
+.ff-user-login h2{
+	padding:20px 0;
+}
+.ff-user-login h2 a:hover{
+	text-decoration:none
+}
+.ff-user-login h5 a{
+	margin:0 10px;
+}
+/*user-center*/
+.ff-user-center{
+}
+.ff-user-center h4.user-name{
+	padding:5px 0;
+}
+.ff-user-center h6.user-link{
+	padding:0 0 10px 0;
+}
+.ff-user-center .navbar-user{
+	margin-bottom:10px;
+}
+.ff-user-center .face{
+	width:100px;
+	height:100px;
+}
+.ff-user-center .safe dt{
+	font-size:1.2em;
+}
+.ff-user-center .safe dd{
+	font-size:1.1em;
+	color:#999;
+	padding-bottom:15px;
+}

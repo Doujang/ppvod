@@ -1,0 +1,195 @@
+@media (min-width: 960px) {
+	.container {
+    width: 630px;
+  }
+}
+.modal-scrollbar-measure {
+	display:none
+}
+html,body {
+	overflow-x: hidden;
+}
+body{
+	background-color:#efefef;
+	font-size:1.4em;
+}
+body, button, input, select, textarea{ 
+  font-family: Microsoft YaHei, Helvetica, '宋体' , Tahoma, Arial, "\5b8b\4f53", sans-serif;
+}
+a{
+	text-decoration:none;
+}
+a:hover{
+	text-decoration:none;
+}
+/*ff-inc*/
+.ff-bg{
+	background:#fff;
+}
+.ff-col{
+	padding:0px 5px;
+}
+.ff-col-0{
+	padding:0px;
+}
+.ff-clearfix{
+	margin-bottom:15px;
+}
+.ff-text-right a{
+	margin-right:5px;
+}
+.ff-text{
+}
+a.ff-text{
+}
+a.ff-text:hover{
+}
+.ff-footer{
+	padding:20px 0;
+}
+.ff-totop {
+	position: fixed;
+	right: 10px;
+	bottom: 10px;
+	color: #fff;
+	text-align: center;
+	border-radius: 2px;
+	z-index: 1;
+	display: block;
+	display: none;
+	background-color: #337ab7;
+	border-color: #337ab7;
+}
+.ff-totop:hover {
+	background-color: #337ab7;
+	border-color: #337ab7;
+}
+.ff-totop i {
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+}
+/*inc*/
+.news-item-medial{
+	padding-bottom:10px;
+	margin-bottom:20px;
+	border-bottom:1px #efefef solid;
+}
+.news-item-medial .face{
+	width:32px;
+	height:32px;
+}
+.news-item-medial .media-body .media-heading{
+	margin-top:0;
+	font-size:1.4em;
+	line-height:1.4em;
+	font-weight:600;
+}
+.news-item-medial .media-body .news-remark{
+	color:#666;
+	font-size:1.0em;
+	line-height:1.6em;
+}
+.news-item-medial .media-body .news-tool{
+	color:#999;
+	font-size:12px;
+}
+.news-item-medial .media-body .news-tool a{
+	color:#999;
+}
+.news-item-medial .media-body .news-tool a:hover{
+	color:#333;
+}
+.news-item-medial .media-body .news-tool .fa{
+	padding-right:10px;
+}
+.news-item-medial .media-left{
+	padding:0 0 0 15px;
+}
+.news-item-medial .media-left .ff-img{
+	width:150px;
+	height:120px;
+}
+/*register*/
+.user-register{
+}
+.user-register h2{
+	padding:30px 0;
+	font-size:1.4em;
+}
+.user-register h2 a:hover{
+	text-decoration:none
+}
+.user-register h5 a{
+	margin:0 10px;
+}
+/*user-login*/
+.user-login{
+}
+.user-login h2{
+	padding:30px 0;
+	font-size:1.4em;
+}
+.user-login h2 a:hover{
+	text-decoration:none
+}
+.user-login h5 a{
+	margin:0 10px;
+}
+/*user-forget*/
+.user-forget{
+}
+.user-forget h2{
+	padding:30px 0;
+	font-size:1.4em;
+}
+.user-forget h2 a:hover{
+	text-decoration:none
+}
+.user-forget h5 a{
+	margin:0 10px;
+}
+.user-forget .ff-vcode-img{
+	height:32px;
+	cursor: pointer;
+}
+/*user-center*/
+.user-center{
+	padding-top:55px;
+}
+.user-center .page-header{
+	margin-top:0;
+	padding-bottom:0;
+}
+.user-center .navbar-header{
+	margin-left:-10px;	
+}
+.user-center h4.user-name{
+	padding:5px 0;
+}
+.user-center h6.user-link{
+	padding:0 0 10px 0;
+}
+.user-center .navbar-user{
+	margin:0 0 5px 0;
+}
+.user-center .face{
+	width:100px;
+	height:100px;
+}
+.user-center .safe dt{
+	font-size:1.1em;
+}
+.user-center .safe dd{
+	font-size:1.0em;
+	color:#999;
+	padding-bottom:15px;
+}
+.user-center table .forum-detail{
+	font-size:14px;
+	list-style:2.0em;
+}
+/*index.tpl*/
+.user-index{
+	padding-top:0;
+}
