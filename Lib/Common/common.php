@@ -936,7 +936,11 @@ function ff_url_img($file, $content, $number=1){
 	if(!empty($prefix)){
 		return $prefix.$file;
 	}else{
-		return C('site_path').C('upload_path').'/'.$file;
+		if(C('site_path')=='D:/WWW/ppvod/'){
+			return C('upload_path').'/'.$file;
+		}else{
+			return C('site_path').C('upload_path').'/'.$file;
+		}
 	}
 }
 // 获取某图片的缩略图地址

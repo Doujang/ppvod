@@ -108,7 +108,7 @@ root:"<?php echo ($root); ?>",urlhtml:"<?php echo (C("url_html")); ?>",sid:"<?ph
         </a>
       </div><?php endif; ?><?php endforeach; endif; else: echo "" ;endif; ?>
   </div>
-  <!-- 轮播（Carousel）导航 -->
+  <!-- 轮播（Carousel）导航 1111-->
   <a class="carousel-control left" href="#ff-slide" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
   <a class="carousel-control right" href="#ff-slide" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
 </div>
