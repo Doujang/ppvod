@@ -32,11 +32,14 @@
     </div>
   </div>
 </div>
-<!-- -->
+<!--添加广告栏位-->
 <div class="clearfix clearfix-ads"></div>
 <div class="container ff-bg">
   <p class="text-center ff-ads">
     {:ff_url_ads('photo')}
+  </p>
+  <p class="text-center ff-ads">
+    {:ff_url_ads('960_90')}
   </p>
 </div>
 <div class="clearfix clearfix-ads"></div>

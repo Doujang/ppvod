@@ -10,7 +10,9 @@ return array (
   'db_charset' => 'utf8',
   'default_theme' => 'default',
   'site_name' => '金鹏影视导航系统',
-  'site_path' => './',
+ # 'site_path' => 'D:/WWW/ppvod/fifi/',
+ # 'site_path' => 'D:/WWW/ppvod/',
+   'site_path' => './',
   'site_domain' => 'www.feifeicms.com',
   'site_domain_m' => '',
   'site_title' => '金鹏影视导航系统首页',
@@ -66,7 +68,7 @@ feifeicms|http://www.feifeicms.com|_blank',
   'play_language' => '国语,英语,粤语,闽南语,韩语,日语,国语/粤语,其它',
   'play_area' => '大陆,香港,台湾,美国,韩国,日本,泰国,新加坡,马来西亚,印度,英国,法国,加拿大,西班牙,俄罗斯,其它',
   'play_year' => '2017,2016,2015,2014,2013,2012,2011,2010,2009,2008,2007,2006,2005,2004,2003,2002,2001,2000,1990,1980,1970,1960,1950',
-  'play_server' => 
+  'play_server' =>
   array (
     'down_a' => 'http://downa.feifeicms.com/',
     'down_b' => 'http://downb.feifeicms.com/',
@@ -114,49 +116,49 @@ feifeicms|http://www.feifeicms.com|_blank',
   'html_cache_iframe' => '12',
   'html_cache_type' => '0.5',
   'html_cache_ajax' => '12',
-  '_htmls_' => 
+  '_htmls_' =>
   array (
-    'home:index:index' => 
+    'home:index:index' =>
     array (
       0 => '{:action}',
       1 => 3600,
     ),
-    'home:vod:type' => 
+    'home:vod:type' =>
     array (
       0 => '{:module}_{:action}/{$_SERVER.REQUEST_URI|md5}',
       1 => 1800,
     ),
-    'home:news:type' => 
+    'home:news:type' =>
     array (
       0 => '{:module}_{:action}/{$_SERVER.REQUEST_URI|md5}',
       1 => 1800,
     ),
-    'home:vod:show' => 
+    'home:vod:show' =>
     array (
       0 => '{:module}_{:action}/{$_SERVER.REQUEST_URI|md5}',
       1 => 5400,
     ),
-    'home:news:show' => 
+    'home:news:show' =>
     array (
       0 => '{:module}_{:action}/{$_SERVER.REQUEST_URI|md5}',
       1 => 5400,
     ),
-    'home:vod:read' => 
+    'home:vod:read' =>
     array (
       0 => '{:module}_{:action}/{id|md5}',
       1 => 43200,
     ),
-    'home:news:read' => 
+    'home:news:read' =>
     array (
       0 => '{:module}_{:action}/{$_SERVER.REQUEST_URI|md5}',
       1 => 43200,
     ),
-    'home:vod:play' => 
+    'home:vod:play' =>
     array (
       0 => '{:module}_{:action}/{$_SERVER.REQUEST_URI|md5}',
       1 => 43200,
     ),
-    'home:my:show' => 
+    'home:my:show' =>
     array (
       0 => '{:module}_{:action}/{$_SERVER.REQUEST_URI|md5}',
       1 => 43200,
@@ -194,369 +196,369 @@ news-type-type-(:any)-id-(:num)-p-(:num)===news/type/(:any)-(:num)-(:num)
 news-type-type-(:any)-id-(:num)===news/type/(:any)-(:num)
 special-show-p-(:num)===topic/(:num)
 special-read-id-(:num)===topic/detail/(:num)',
-  'url_rewrite_rules' => 
+  'url_rewrite_rules' =>
   array (
-    'vod/show/cms' => 
+    'vod/show/cms' =>
     array (
       'find' => 'vod-show-cms-ugc',
       'replace' => 'ugc',
     ),
-    'vod/show/id/p' => 
+    'vod/show/id/p' =>
     array (
       'find' => 'vod-show-id-([0-9]+)-p-([0-9]+)',
       'replace' => 'video/channel/$1-$2',
     ),
-    'vod/show/id' => 
+    'vod/show/id' =>
     array (
       'find' => 'vod-show-id-([0-9]+)',
       'replace' => 'video/channel/$1',
     ),
-    'vod/read/id' => 
+    'vod/read/id' =>
     array (
       'find' => 'vod-read-id-([0-9]+)',
       'replace' => 'video/detail/$1',
     ),
-    'vod/play/id/sid/pid' => 
+    'vod/play/id/sid/pid' =>
     array (
       'find' => 'vod-play-id-([0-9]+)-sid-([0-9]+)-pid-([0-9]+)',
       'replace' => 'video/play/$1-$2-$3',
     ),
-    'vod/search/name/p' => 
+    'vod/search/name/p' =>
     array (
       'find' => 'vod-search-name-(.*)-p-([0-9]+)',
       'replace' => 'video/name/$1/$2',
     ),
-    'vod/search/name' => 
+    'vod/search/name' =>
     array (
       'find' => 'vod-search-name-(.*)',
       'replace' => 'video/name/$1',
     ),
-    'vod/search/actor' => 
+    'vod/search/actor' =>
     array (
       'find' => 'vod-search-actor-(.*)',
       'replace' => 'video/actor/$1',
     ),
-    'vod/search/director' => 
+    'vod/search/director' =>
     array (
       'find' => 'vod-search-director-(.*)',
       'replace' => 'video/director/$1',
     ),
-    'vod/search/wd' => 
+    'vod/search/wd' =>
     array (
       'find' => 'vod-search-wd-(.*)',
       'replace' => 'video/search/$1',
     ),
-    'vod/tags/name/p' => 
+    'vod/tags/name/p' =>
     array (
       'find' => 'vod-tags-name-(.*)-p-([0-9]+)',
       'replace' => 'video/tags/$1/$2',
     ),
-    'vod/tags/name' => 
+    'vod/tags/name' =>
     array (
       'find' => 'vod-tags-name-(.*)',
       'replace' => 'video/tags/$1',
     ),
-    'vod/rss/id' => 
+    'vod/rss/id' =>
     array (
       'find' => 'vod-rss-id-([0-9]+)',
       'replace' => 'video/rss/$1',
     ),
-    'vod/type/id/type/area/year/star/state/order/p' => 
+    'vod/type/id/type/area/year/star/state/order/p' =>
     array (
       'find' => 'vod-type-id-([0-9]+)-type-(.*)-area-(.*)-year-(.*)-star-(.*)-state-(.*)-order-(.*)-p-([0-9]+)',
       'replace' => 'video/type$1/$2-$3-$4-$5-$6-$7-$8',
     ),
-    'vod/type/id/type/area/year/star/state/order' => 
+    'vod/type/id/type/area/year/star/state/order' =>
     array (
       'find' => 'vod-type-id-([0-9]+)-type-(.*)-area-(.*)-year-(.*)-star-(.*)-state-(.*)-order-(.*)',
       'replace' => 'video/type$1/$2-$3-$4-$5-$6-$7',
     ),
-    'vod/scenario/id/pid' => 
+    'vod/scenario/id/pid' =>
     array (
       'find' => 'vod-scenario-id-([0-9]+)-pid-([0-9]+)',
       'replace' => 'scenario/$1-$2',
     ),
-    'vod/scenario/id' => 
+    'vod/scenario/id' =>
     array (
       'find' => 'vod-scenario-id-([0-9]+)',
       'replace' => 'scenario/$1',
     ),
-    'news/read/id/p' => 
+    'news/read/id/p' =>
     array (
       'find' => 'news-read-id-([0-9]+)-p-([0-9]+)',
       'replace' => 'news/detail/$1-$2',
     ),
-    'news/read/id' => 
+    'news/read/id' =>
     array (
       'find' => 'news-read-id-([0-9]+)',
       'replace' => 'news/detail/$1',
     ),
-    'news/show/id/p' => 
+    'news/show/id/p' =>
     array (
       'find' => 'news-show-id-([0-9]+)-p-([0-9]+)',
       'replace' => 'news/channel/$1-$2',
     ),
-    'news/show/id' => 
+    'news/show/id' =>
     array (
       'find' => 'news-show-id-([0-9]+)',
       'replace' => 'news/channel/$1',
     ),
-    'news/search/wd' => 
+    'news/search/wd' =>
     array (
       'find' => 'news-search-wd-(.*)',
       'replace' => 'news/search/$1',
     ),
-    'news/tags/name/p' => 
+    'news/tags/name/p' =>
     array (
       'find' => 'news-tags-name-(.*)-p-([0-9]+)',
       'replace' => 'news/tags/$1/$2',
     ),
-    'news/tags/name' => 
+    'news/tags/name' =>
     array (
       'find' => 'news-tags-name-(.*)',
       'replace' => 'news/tags/$1',
     ),
-    'news/type/type/id/p' => 
+    'news/type/type/id/p' =>
     array (
       'find' => 'news-type-type-(.*)-id-([0-9]+)-p-([0-9]+)',
       'replace' => 'news/type/$1-$2-$3',
     ),
-    'news/type/type/id' => 
+    'news/type/type/id' =>
     array (
       'find' => 'news-type-type-(.*)-id-([0-9]+)',
       'replace' => 'news/type/$1-$2',
     ),
-    'special/show/p' => 
+    'special/show/p' =>
     array (
       'find' => 'special-show-p-([0-9]+)',
       'replace' => 'topic/$1',
     ),
-    'special/read/id' => 
+    'special/read/id' =>
     array (
       'find' => 'special-read-id-([0-9]+)',
       'replace' => 'topic/detail/$1',
     ),
   ),
-  'url_route_rules' => 
+  'url_route_rules' =>
   array (
-    0 => 
+    0 =>
     array (
       0 => '/movie$/',
       1 => 'vod/show',
       2 => 'cms',
       3 => 'id=1',
     ),
-    1 => 
+    1 =>
     array (
       0 => '/drama$/',
       1 => 'vod/show',
       2 => 'cms',
       3 => 'id=2',
     ),
-    2 => 
+    2 =>
     array (
       0 => '/comic$/',
       1 => 'vod/show',
       2 => 'cms',
       3 => 'id=3',
     ),
-    3 => 
+    3 =>
     array (
       0 => '/show$/',
       1 => 'vod/show',
       2 => 'cms',
       3 => 'id=4',
     ),
-    4 => 
+    4 =>
     array (
       0 => '/ugc$/',
       1 => 'vod/show',
       2 => 'cms',
       3 => 'id=5',
     ),
-    5 => 
+    5 =>
     array (
       0 => '/video\\/channel\\/([0-9]+)-([0-9]+)$/',
       1 => 'vod/show',
       2 => 'id,p',
       3 => NULL,
     ),
-    6 => 
+    6 =>
     array (
       0 => '/video\\/channel\\/([0-9]+)$/',
       1 => 'vod/show',
       2 => 'id',
       3 => NULL,
     ),
-    7 => 
+    7 =>
     array (
       0 => '/video\\/detail\\/([0-9]+)$/',
       1 => 'vod/read',
       2 => 'id',
       3 => NULL,
     ),
-    8 => 
+    8 =>
     array (
       0 => '/video\\/play\\/([0-9]+)-([0-9]+)-([0-9]+)$/',
       1 => 'vod/play',
       2 => 'id,sid,pid',
       3 => NULL,
     ),
-    9 => 
+    9 =>
     array (
       0 => '/video\\/name\\/(.*)\\/([0-9]+)$/',
       1 => 'vod/search',
       2 => 'name,p',
       3 => NULL,
     ),
-    10 => 
+    10 =>
     array (
       0 => '/video\\/name\\/(.*)$/',
       1 => 'vod/search',
       2 => 'name',
       3 => NULL,
     ),
-    11 => 
+    11 =>
     array (
       0 => '/video\\/actor\\/(.*)$/',
       1 => 'vod/search',
       2 => 'actor',
       3 => NULL,
     ),
-    12 => 
+    12 =>
     array (
       0 => '/video\\/director\\/(.*)$/',
       1 => 'vod/search',
       2 => 'director',
       3 => NULL,
     ),
-    13 => 
+    13 =>
     array (
       0 => '/video\\/search\\/(.*)$/',
       1 => 'vod/search',
       2 => 'wd',
       3 => NULL,
     ),
-    14 => 
+    14 =>
     array (
       0 => '/video\\/tags\\/(.*)\\/([0-9]+)$/',
       1 => 'vod/tags',
       2 => 'name,p',
       3 => NULL,
     ),
-    15 => 
+    15 =>
     array (
       0 => '/video\\/tags\\/(.*)$/',
       1 => 'vod/tags',
       2 => 'name',
       3 => NULL,
     ),
-    16 => 
+    16 =>
     array (
       0 => '/video\\/rss\\/([0-9]+)$/',
       1 => 'vod/rss',
       2 => 'id',
       3 => NULL,
     ),
-    17 => 
+    17 =>
     array (
       0 => '/video\\/type([0-9]+)\\/(.*)-(.*)-(.*)-(.*)-(.*)-(.*)-([0-9]+)$/',
       1 => 'vod/type',
       2 => 'id,type,area,year,star,state,order,p',
       3 => NULL,
     ),
-    18 => 
+    18 =>
     array (
       0 => '/video\\/type([0-9]+)\\/(.*)-(.*)-(.*)-(.*)-(.*)-(.*)$/',
       1 => 'vod/type',
       2 => 'id,type,area,year,star,state,order',
       3 => NULL,
     ),
-    19 => 
+    19 =>
     array (
       0 => '/scenario\\/([0-9]+)-([0-9]+)$/',
       1 => 'vod/scenario',
       2 => 'id,pid',
       3 => NULL,
     ),
-    20 => 
+    20 =>
     array (
       0 => '/scenario\\/([0-9]+)$/',
       1 => 'vod/scenario',
       2 => 'id',
       3 => NULL,
     ),
-    21 => 
+    21 =>
     array (
       0 => '/news\\/detail\\/([0-9]+)-([0-9]+)$/',
       1 => 'news/read',
       2 => 'id,p',
       3 => NULL,
     ),
-    22 => 
+    22 =>
     array (
       0 => '/news\\/detail\\/([0-9]+)$/',
       1 => 'news/read',
       2 => 'id',
       3 => NULL,
     ),
-    23 => 
+    23 =>
     array (
       0 => '/news\\/channel\\/([0-9]+)-([0-9]+)$/',
       1 => 'news/show',
       2 => 'id,p',
       3 => NULL,
     ),
-    24 => 
+    24 =>
     array (
       0 => '/news\\/channel\\/([0-9]+)$/',
       1 => 'news/show',
       2 => 'id',
       3 => NULL,
     ),
-    25 => 
+    25 =>
     array (
       0 => '/news\\/search\\/(.*)$/',
       1 => 'news/search',
       2 => 'wd',
       3 => NULL,
     ),
-    26 => 
+    26 =>
     array (
       0 => '/news\\/tags\\/(.*)\\/([0-9]+)$/',
       1 => 'news/tags',
       2 => 'name,p',
       3 => NULL,
     ),
-    27 => 
+    27 =>
     array (
       0 => '/news\\/tags\\/(.*)$/',
       1 => 'news/tags',
       2 => 'name',
       3 => NULL,
     ),
-    28 => 
+    28 =>
     array (
       0 => '/news\\/type\\/(.*)-([0-9]+)-([0-9]+)$/',
       1 => 'news/type',
       2 => 'type,id,p',
       3 => NULL,
     ),
-    29 => 
+    29 =>
     array (
       0 => '/news\\/type\\/(.*)-([0-9]+)$/',
       1 => 'news/type',
       2 => 'type,id',
       3 => NULL,
     ),
-    30 => 
+    30 =>
     array (
       0 => '/topic\\/([0-9]+)$/',
       1 => 'special/show',
       2 => 'p',
       3 => NULL,
     ),
-    31 => 
+    31 =>
     array (
       0 => '/topic\\/detail\\/([0-9]+)$/',
       1 => 'special/read',
@@ -585,8 +587,8 @@ special-read-id-(:num)===topic/detail/(:num)',
   'user_pay_small' => '5',
   'user_pay_vip_ext' => '10',
   'user_pay_vip_small' => '5',
-  'user_pay_appid' => '123456789',
-  'user_pay_appkey' => '123456',
+  'user_pay_appid' => '',
+  'user_pay_appkey' => '',
   'user_register_score_pid' => '10',
   'ui_scenario' => '10',
   'ui_record' => '10',
