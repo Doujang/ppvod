@@ -371,7 +371,7 @@ class AllAction extends Action{
 	public function Lable_Style(){
 		C('TOKEN_ON',false);//C('TOKEN_NAME','form_'.$array['model']);取消前端的表单令牌
 		$array = array();
-		$array['root'] = C('site_path');	
+		$array['root'] = C('site_path');
 		$array['model'] = strtolower(MODULE_NAME);
 		$array['action'] = strtolower(ACTION_NAME);	
 		$array['public_path'] = $array['root'].'Public/';	
@@ -392,7 +392,7 @@ class AllAction extends Action{
 		$user = D('User')->ff_info_cookie();
 		$array['site_user_id'] = $user['user_id'];
 		$array['site_user_name'] = $user['user_name'];	
-		return $array;		
+		return $array;
 	}
 }
 ?>

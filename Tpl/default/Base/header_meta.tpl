@@ -2,12 +2,14 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 <meta name="renderer" content="webkit">
-<link rel="shortcut icon" href="{$root}favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="./Public/images/favicon.ico" type="image/x-icon" />
 <link rel="stylesheet" href="./Public/bootstrap/3.3.5/css/bootstrap.min.css">
 <link rel="stylesheet" href="./Tpl/default/system.css?{%feifeicms_version}">
 <script type="text/javascript">var cms = {
 root:"{$root}",urlhtml:"{$Think.config.url_html}",sid:"{$site_sid}",id:"{$vod_id}{$news_id}{$special_id}",userid:"{$site_user_id}",username:"{$site_user_name}",userforum:"{$Think.config.user_forum}",page:"{$list_page|default=1}",domain_m:"{$site_domain_m}"
-};</script><script type="text/javascript" src="./Public/jquery/1.11.3/jquery.min.js"></script>
+};
+</script>
+<script type="text/javascript" src="./Public/jquery/1.11.3/jquery.min.js"></script>
 <script type="text/javascript" src="./Public/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="./Public/js/system.js?{%feifeicms_version}"></script>
 <!--[if lt IE 9]>
