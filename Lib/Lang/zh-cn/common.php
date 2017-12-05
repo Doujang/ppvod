@@ -1,6 +1,6 @@
 <?php
 return array(
-	'appname'=>'金鹏影视导航系统',
+	'appname'=>'飞飞影视导航系统',
 	'feifeicms_welcome'=>'欢迎使用金鹏影视导航系统3.5.171031',
 	'feifeicms_version'=>'3.5.171031',
 	'feifeicms_homeurl'=>'http://www.feifeicms.com',

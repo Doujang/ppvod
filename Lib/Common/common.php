@@ -936,11 +936,7 @@ function ff_url_img($file, $content, $number=1){
 	if(!empty($prefix)){
 		return $prefix.$file;
 	}else{
-		if(C('site_path')=='D:/WWW/ppvod/'){
-			return C('upload_path').'/'.$file;
-		}else{
-			return C('site_path').C('upload_path').'/'.$file;
-		}
+		return C('site_path').C('upload_path').'/'.$file;
 	}
 }
 // 获取某图片的缩略图地址
@@ -1259,7 +1255,6 @@ function ff_mysql_tags($tag_str){
 // 循环标签.视频
 function ff_mysql_vod($tag_str){
 	$tag = ff_param_lable($tag_str);
-	//echo '<pre>';print_r($tag);die;
 	$where = array();
 	//根据参数生成查询条件
 	$where['vod_status'] = array('eq',1);	
@@ -1442,9 +1437,6 @@ function ff_mysql_vod($tag_str){
 	}else{
 		$rs = D('VodView');
 	}
-	//echo '<pre>';	print_r($where);echo '<br>';
-	//print_r($tag);
-	//print_r(ff_mysql_param($tag));//die;
 	return $rs->ff_select_page(ff_mysql_param($tag), $where);
 }
 // 循环标签.文章

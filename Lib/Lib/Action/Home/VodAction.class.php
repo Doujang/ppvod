@@ -11,7 +11,6 @@ class VodAction extends HomeAction{
 	public function type(){
 		//参数
 		$params = ff_param_url();
-	//	print_r($params);die;
 		//条件
 		$where = array();
 		$where['list_status'] = array('eq', 1);
@@ -21,7 +20,7 @@ class VodAction extends HomeAction{
 		$info = $this->Lable_Vod_Type($params, $info);
 		$this->assign($info);
 		$this->display($info['list_skin_type']);
-	}
+	}	
 	// 影视搜索 get方式
 	public function search(){
 		$params = ff_param_url();
@@ -33,7 +32,6 @@ class VodAction extends HomeAction{
   public function show(){
 		$info = $this->get_cache_list('id');
 		$this->assign($info);
-	 // print_r($info);die;
 		$this->display($info['list_skin']);
 	}
   // 按别名获取分类页
@@ -124,12 +122,10 @@ class VodAction extends HomeAction{
 			$where['list_id'] = array('eq', $params['id']);
 		}
 		$info = D('List')->ff_find('*', $where, 'cache_page_list_'.$params['id']);
-		//print_r($info);die;
 		if(!$info){
 			$this->assign("jumpUrl",C('site_path'));
 			$this->error('该分类已删除，请选择其它分类！');
 		}
-		//print_r($params);die;
 		//解析标签
 		return $this->Lable_Vod_List($params, $info);
 	}
