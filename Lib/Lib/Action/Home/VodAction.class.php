@@ -123,10 +123,12 @@ class VodAction extends HomeAction{
 			$where['list_id'] = array('eq', $params['id']);
 		}
 		$info = D('List')->ff_find('*', $where, 'cache_page_list_'.$params['id']);
+		//print_r($info);die;
 		if(!$info){
 			$this->assign("jumpUrl",C('site_path'));
 			$this->error('该分类已删除，请选择其它分类！');
 		}
+		//print_r($params);die;
 		//解析标签
 		return $this->Lable_Vod_List($params, $info);
 	}

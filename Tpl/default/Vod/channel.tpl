@@ -30,6 +30,7 @@
       <span class="pull-right"><a href="{:ff_url('vod/type',array('id'=>$list_id,'type'=>urlencode($feifeilist),'area'=>'','year'=>'','star'=>'','state'=>'','order'=>'addtime','p'=>1),true)}" class="btn btn-success btn-xs">更多</a></span>
       </h2>
     </div>
+    <!--循环图片 -->
     <ul class="list-unstyled vod-item-img ff-img-215">
       <volist name="item_vod" id="feifei">
       <include file="Base:vod_item_img_left" />
@@ -48,7 +49,7 @@
   </div><!--lg-4 end -->
 </div><!--row end -->
 </div>
-<div class="clearfix ff-clearfix"></div> 
+<div class="clearfix ff-clearfix"></div>
 </notempty>
 </volist>
 <!-- -->

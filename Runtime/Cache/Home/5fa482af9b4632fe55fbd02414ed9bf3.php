@@ -5,16 +5,16 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 <meta name="renderer" content="webkit">
-<link rel="shortcut icon" href="./Public/images/favicon.ico" type="image/x-icon" />
-<link rel="stylesheet" href="./Public/bootstrap/3.3.5/css/bootstrap.min.css">
-<link rel="stylesheet" href="./Tpl/default/system.css?<?php echo L("feifeicms_version");?>">
+<link rel="shortcut icon" href="<?php echo ($root); ?>favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" href="<?php echo ($public_path); ?>bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="stylesheet" href="<?php echo ($tpl_path); ?>system.css?<?php echo L("feifeicms_version");?>">
 <script type="text/javascript">var cms = {
 root:"<?php echo ($root); ?>",urlhtml:"<?php echo (C("url_html")); ?>",sid:"<?php echo ($site_sid); ?>",id:"<?php echo ($vod_id); ?><?php echo ($news_id); ?><?php echo ($special_id); ?>",userid:"<?php echo ($site_user_id); ?>",username:"<?php echo ($site_user_name); ?>",userforum:"<?php echo (C("user_forum")); ?>",page:"<?php echo (($list_page)?($list_page):1); ?>",domain_m:"<?php echo ($site_domain_m); ?>"
 };
 </script>
-<script type="text/javascript" src="./Public/jquery/1.11.3/jquery.min.js"></script>
-<script type="text/javascript" src="./Public/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="./Public/js/system.js?<?php echo L("feifeicms_version");?>"></script>
+<script type="text/javascript" src="<?php echo ($public_path); ?>jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript" src="<?php echo ($public_path); ?>bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="<?php echo ($public_path); ?>js/system.js?<?php echo L("feifeicms_version");?>"></script>
 <!--[if lt IE 9]>
 <script src="<?php echo ($public_path); ?>html5shiv/3.7.2/html5shiv.min.js"></script>
 <script src="<?php echo ($public_path); ?>respond/1.4.2/respond.min.js"></script>
@@ -82,7 +82,7 @@ root:"<?php echo ($root); ?>",urlhtml:"<?php echo (C("url_html")); ?>",sid:"<?ph
     </div>
   </div><!-- /.container -->
 </nav><!-- /.navbar -->
-<!-- -->
+<!--热门搜索： -->
 <div class="container ff-bg">
   <div class="row ff-row slide">
     <div class="col-md-8 ff-col">
@@ -309,7 +309,7 @@ root:"<?php echo ($root); ?>",urlhtml:"<?php echo (C("url_html")); ?>",sid:"<?ph
   </ul>
 </div>
 <div class="clearfix ff-clearfix"></div><?php endif; ?>
-<!-- -->
+<!-- 友情链接-->
 <div class="container ff-bg hidden-xs">
   <div class="page-header">
     <h2><span class="glyphicon glyphicon-link ff-text"></span> 友情链接</h2>
