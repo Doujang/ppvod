@@ -11,6 +11,7 @@ class VodAction extends HomeAction{
 	public function type(){
 		//参数
 		$params = ff_param_url();
+	//	print_r($params);die;
 		//条件
 		$where = array();
 		$where['list_status'] = array('eq', 1);
@@ -20,7 +21,7 @@ class VodAction extends HomeAction{
 		$info = $this->Lable_Vod_Type($params, $info);
 		$this->assign($info);
 		$this->display($info['list_skin_type']);
-	}	
+	}
 	// 影视搜索 get方式
 	public function search(){
 		$params = ff_param_url();

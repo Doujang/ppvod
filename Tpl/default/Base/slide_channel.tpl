@@ -1,4 +1,4 @@
-<php>$item_slide = ff_mysql_vod('field:list_id,list_dir,vod_id,vod_name,vod_ename,vod_jumpurl,vod_pic_slide;cid:'.$list_id.';limit:6;pic_slide:true;cache_name:default;cache_time:default;order:vod_stars desc,vod_id;sort:desc');</php>
+<php>$item_slide = ff_mysql_vod('field:list_id,list_dir,vod_id,vod_name,vod_ename,vod_jumpurl,vod_pic_slide;cid:'.$list_id.',7;limit:6;pic_slide:true;cache_name:default;cache_time:default;order:vod_stars desc,vod_id;sort:desc');</php>
 <div class="carousel ff-slide" id="ff-slide" data-interval="{$Think.config.ui_slide_index}">
   <!-- 轮播（Carousel）指标 -->
   <ol class="carousel-indicators">
