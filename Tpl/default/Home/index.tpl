@@ -6,7 +6,7 @@
 </head>
 <body class="index">
 <include file="Block:header" />
-<!--热门搜索： -->
+<!-- -->
 <div class="container ff-bg">
   <div class="row ff-row slide">
     <div class="col-md-8 ff-col">
@@ -32,12 +32,9 @@
     </div>
   </div>
 </div>
-<!--添加广告栏位-->
+<!-- -->
 <div class="clearfix clearfix-ads"></div>
 <div class="container ff-bg">
-  <p class="text-center ff-ads">
-    {:ff_url_ads('photo')}
-  </p>
   <p class="text-center ff-ads">
     {:ff_url_ads('960_90')}
   </p>
@@ -125,7 +122,7 @@
 </div>
 <div class="clearfix ff-clearfix"></div>
 </notempty>
-<!-- 友情链接-->
+<!-- -->
 <div class="container ff-bg hidden-xs">
   <div class="page-header">
     <h2><span class="glyphicon glyphicon-link ff-text"></span> 友情链接</h2>
