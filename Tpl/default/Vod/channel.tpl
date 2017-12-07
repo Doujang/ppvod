@@ -9,10 +9,10 @@
 <div class="container ff-bg">
   <div class="row ff-row">
     <div class="col-md-8 ff-col ff-slide-pic">
-      <include file="Base:slide_channel" />
+      <include file="Base:slide_channel" />{*图片轮播*}
     </div>
     <div class="col-md-4 ff-col">
-      <include file="Block:vod_channel_types" />
+      <include file="Block:vod_channel_types" /> {*图片轮播右边类型*}
     </div>
   </div>
 </div>

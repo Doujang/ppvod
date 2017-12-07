@@ -19,30 +19,51 @@ $totalpages = ff_page_count('type', 'totalpages');
   <dl class="dl-horizontal">
     <dt>频道：</dt>
     <dd class="text-nowrap ff-gallery">
-    <volist name=":ff_mysql_list('sid:1;limit:12;cahce_name:default;cahce_time:default;order:list_pid asc,list_oid;sort:asc')" id="feifei"><a href="{:ff_url('vod/type',array('id'=>$feifei['list_id'],'type'=>'','area'=>'','year'=>'','star'=>'','state'=>'','order'=>'addtime','p'=>1),true)}" class="btn btn-sm btn-default gallery-cell" id="id{:md5($feifei['list_id'])}">{$feifei.list_name}</a></volist></dd>
+    <volist name=":ff_mysql_list('sid:1;limit:12;cahce_name:default;cahce_time:default;order:list_pid asc,list_oid;sort:asc')" id="feifei">
+      <a href="{:ff_url('vod/type',array('id'=>$feifei['list_id'],'type'=>'','area'=>'','year'=>'','star'=>'','state'=>'','order'=>'addtime','p'=>1),true)}" class="btn btn-sm btn-default gallery-cell" id="id{:md5($feifei['list_id'])}">{$feifei.list_name}</a>
+    </volist>
+    </dd>
     <dt>类型：</dt>
     <dd class="text-nowrap ff-gallery ff-text-right">
     <a href="{:ff_url('vod/type',array('id'=>$type_id,'type'=>'','area'=>urlencode($type_area),'year'=>$type_year,'star'=>urlencode($type_star),'state'=>urlencode($type_state),'order'=>$type_order,'p'=>1),true)}" class="btn btn-sm btn-default gallery-cell" id="type{:md5('')}">全部</a>
-    <volist name=":explode(',',$list_extend['type'])" id="feifei" offset="0" length='15'><a href="{:ff_url('vod/type',array('id'=>$type_id,'type'=>urlencode($feifei),'area'=>urlencode($type_area),'year'=>$type_year,'star'=>urlencode($type_star),'state'=>urlencode($type_state),'order'=>$type_order,'p'=>1),true)}" class="btn btn-sm btn-default gallery-cell" id="type{:md5($feifei)}">{$feifei}</a></volist></dd>
+    <volist name=":explode(',',$list_extend['type'])" id="feifei" offset="0" length='15'>
+      <a href="{:ff_url('vod/type',array('id'=>$type_id,'type'=>urlencode($feifei),'area'=>urlencode($type_area),'year'=>$type_year,'star'=>urlencode($type_star),'state'=>urlencode($type_state),'order'=>$type_order,'p'=>1),true)}" class="btn btn-sm btn-default gallery-cell" id="type{:md5($feifei)}">{$feifei}</a>
+    </volist>
+    </dd>
     <dt>地区：</dt>
     <dd class="text-nowrap ff-gallery">
     <a href="{:ff_url('vod/type',array('id'=>$type_id,'type'=>urlencode($type_type),'area'=>'','year'=>$type_year,'star'=>urlencode($type_star),'state'=>urlencode($type_state),'order'=>$type_order,'p'=>1),true)}" class="btn btn-sm btn-default gallery-cell" id="area{:md5('')}">全部</a>
-    <volist name=":explode(',',$list_extend['area'])" id="feifei" offset="0" length='15'><a href="{:ff_url('vod/type',array('id'=>$type_id,'type'=>urlencode($type_type),'area'=>urlencode($feifei),'year'=>$type_year,'star'=>urlencode($type_star),'state'=>urlencode($type_state),'order'=>$type_order,'p'=>1),true)}" class="btn btn-sm btn-default gallery-cell" id="area{:md5($feifei)}">{$feifei}</a></volist></dd>
+    <volist name=":explode(',',$list_extend['area'])" id="feifei" offset="0" length='15'>
+      <a href="{:ff_url('vod/type',array('id'=>$type_id,'type'=>urlencode($type_type),'area'=>urlencode($feifei),'year'=>$type_year,'star'=>urlencode($type_star),'state'=>urlencode($type_state),'order'=>$type_order,'p'=>1),true)}" class="btn btn-sm btn-default gallery-cell" id="area{:md5($feifei)}">{$feifei}</a>
+    </volist>
+    </dd>
     <dt>年代：</dt>
     <dd class="text-nowrap ff-gallery">
     <a href="{:ff_url('vod/type',array('id'=>$type_id,'type'=>urlencode($type_type),'area'=>urlencode($type_area),'year'=>'','star'=>urlencode($type_star),'state'=>urlencode($type_state),'order'=>$type_order,'p'=>1),true)}" class="btn btn-sm btn-default gallery-cell" id="year{:md5('')}">全部</a>
-    <volist name=":explode(',',$list_extend['year'])" id="feifei" offset="0" length='7'><a href="{:ff_url('vod/type',array('id'=>$type_id,'type'=>urlencode($type_type),'area'=>urlencode($type_area),'year'=>$feifei,'star'=>urlencode($type_star),'state'=>urlencode($type_state),'order'=>$type_order,'p'=>1),true)}" class="btn btn-sm btn-default gallery-cell" id="year{:md5($feifei)}">{$feifei}</a></volist><a href="{:ff_url('vod/type',array('id'=>$type_id,'type'=>urlencode($type_type),'area'=>urlencode($type_area),'year'=>'20002010','star'=>urlencode($type_star),'state'=>urlencode($type_state),'order'=>$type_order,'p'=>1),true)}" class="btn btn-sm btn-default gallery-cell" id="year{:md5('20002010')}">2010-2000</a><a href="{:ff_url('vod/type',array('id'=>$type_id,'type'=>urlencode($type_type),'area'=>urlencode($type_area),'year'=>'19901999','star'=>urlencode($type_star),'state'=>urlencode($type_state),'order'=>$type_order,'p'=>1),true)}" class="btn btn-sm btn-default gallery-cell" id="year{:md5('19901999')}">90年代</a><a href="{:ff_url('vod/type',array('id'=>$type_id,'type'=>urlencode($type_type),'area'=>urlencode($type_area),'year'=>'18001989','star'=>urlencode($type_star),'state'=>urlencode($type_state),'order'=>$type_order,'p'=>1),true)}" class="btn btn-sm btn-default gallery-cell" id="year{:md5('18001989')}">更早</a></dd>
+    <volist name=":explode(',',$list_extend['year'])" id="feifei" offset="0" length='7'>
+      <a href="{:ff_url('vod/type',array('id'=>$type_id,'type'=>urlencode($type_type),'area'=>urlencode($type_area),'year'=>$feifei,'star'=>urlencode($type_star),'state'=>urlencode($type_state),'order'=>$type_order,'p'=>1),true)}" class="btn btn-sm btn-default gallery-cell" id="year{:md5($feifei)}">{$feifei}</a>
+    </volist>
+      <a href="{:ff_url('vod/type',array('id'=>$type_id,'type'=>urlencode($type_type),'area'=>urlencode($type_area),'year'=>'20002010','star'=>urlencode($type_star),'state'=>urlencode($type_state),'order'=>$type_order,'p'=>1),true)}" class="btn btn-sm btn-default gallery-cell" id="year{:md5('20002010')}">2010-2000</a>
+      <a href="{:ff_url('vod/type',array('id'=>$type_id,'type'=>urlencode($type_type),'area'=>urlencode($type_area),'year'=>'19901999','star'=>urlencode($type_star),'state'=>urlencode($type_state),'order'=>$type_order,'p'=>1),true)}" class="btn btn-sm btn-default gallery-cell" id="year{:md5('19901999')}">90年代</a>
+      <a href="{:ff_url('vod/type',array('id'=>$type_id,'type'=>urlencode($type_type),'area'=>urlencode($type_area),'year'=>'18001989','star'=>urlencode($type_star),'state'=>urlencode($type_state),'order'=>$type_order,'p'=>1),true)}" class="btn btn-sm btn-default gallery-cell" id="year{:md5('18001989')}">更早</a>
+    </dd>
     <notempty name="list_extend.star">
     <dt>明星：</dt>
     <dd class="text-nowrap ff-gallery">
     <a href="{:ff_url('vod/type',array('id'=>$type_id,'type'=>urlencode($type_type),'area'=>urlencode($type_area),'year'=>$type_year,'star'=>'','state'=>urlencode($type_state),'order'=>$type_order,'p'=>1),true)}" class="btn btn-sm btn-default gallery-cell" id="star{:md5('')}">全部</a>
-    <volist name=":explode(',',$list_extend['star'])" id="feifei" offset="0" length='13'><a href="{:ff_url('vod/type',array('id'=>$type_id,'type'=>urlencode($type_type),'area'=>urlencode($type_area),'year'=>$type_year,'star'=>urlencode($feifei),'state'=>urlencode($type_state),'order'=>$type_order,'p'=>1),true)}" class="btn btn-sm btn-default gallery-cell" id="star{:md5($feifei)}">{$feifei}</a></volist></dd>
+    <volist name=":explode(',',$list_extend['star'])" id="feifei" offset="0" length='13'>
+      <a href="{:ff_url('vod/type',array('id'=>$type_id,'type'=>urlencode($type_type),'area'=>urlencode($type_area),'year'=>$type_year,'star'=>urlencode($feifei),'state'=>urlencode($type_state),'order'=>$type_order,'p'=>1),true)}" class="btn btn-sm btn-default gallery-cell" id="star{:md5($feifei)}">{$feifei}</a>
+    </volist>
+    </dd>
     </notempty>
     <notempty name="list_extend.state">
     <dt>资源：</dt>
     <dd class="text-nowrap ff-gallery">
     <a href="{:ff_url('vod/type',array('id'=>$type_id,'type'=>urlencode($type_type),'area'=>urlencode($type_area),'year'=>$type_year,'star'=>urlencode($type_star),'state'=>'','order'=>$type_order,'p'=>1),true)}" class="btn btn-sm btn-default gallery-cell" id="state{:md5('')}">全部</a>
-    <volist name=":explode(',',$list_extend['state'])" id="feifei" offset="0" length='15'><a href="{:ff_url('vod/type',array('id'=>$type_id,'type'=>urlencode($type_type),'area'=>urlencode($type_area),'year'=>$type_year,'star'=>urlencode($type_star),'state'=>urlencode($feifei),'order'=>$type_order,'p'=>1),true)}" class="btn btn-sm btn-default gallery-cell" id="state{:md5($feifei)}">{$feifei}</a></volist></dd>
+    <volist name=":explode(',',$list_extend['state'])" id="feifei" offset="0" length='15'>
+      <a href="{:ff_url('vod/type',array('id'=>$type_id,'type'=>urlencode($type_type),'area'=>urlencode($type_area),'year'=>$type_year,'star'=>urlencode($type_star),'state'=>urlencode($feifei),'order'=>$type_order,'p'=>1),true)}" class="btn btn-sm btn-default gallery-cell" id="state{:md5($feifei)}">{$feifei}</a>
+    </volist>
+    </dd>
     </notempty>
   </dl> 
   <!-- -->

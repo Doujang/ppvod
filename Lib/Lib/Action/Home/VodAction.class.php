@@ -11,13 +11,16 @@ class VodAction extends HomeAction{
 	public function type(){
 		//参数
 		$params = ff_param_url();
+		//print_r($params);die;
 		//条件
 		$where = array();
 		$where['list_status'] = array('eq', 1);
 		$where['list_id'] = array('eq', $params['id']);
 		$info = D('List')->ff_find('*', $where, 'cache_page_type_'.$params['id']);
+		//print_r($info);
 		//解析
 		$info = $this->Lable_Vod_Type($params, $info);
+		//print_r($info);die;
 		$this->assign($info);
 		$this->display($info['list_skin_type']);
 	}	

@@ -56,7 +56,7 @@ class LoginAction extends Action{
 		$this->success('恭喜您，注销成功');//用于跳转,调用跳转地址跳转页面
 	//	$this->display('./Public/system/login.html');
     }
-	// 用户登出
+	// 用于用户登出后跳转到登录页
 	public function logout_Index(){
 		if (isset($_SESSION[C('USER_AUTH_KEY')])) {
 			unset($_SESSION);
