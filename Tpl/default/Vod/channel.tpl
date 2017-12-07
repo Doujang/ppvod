@@ -16,7 +16,7 @@
     </div>
   </div>
 </div>
-<div class="clearfix ff-clearfix"></div> 
+<div class="clearfix ff-clearfix"></div>
 <volist name=":explode(',',$list_extend['type'])" id="feifeilist" offset="0" length="8">
 <php>$item_vod=ff_mysql_vod('cid:'.$list_id.';tag_name:'.$feifeilist.';tag_list:vod_type;limit:12;cache_name:default;cache_time:default;order:vod_stars desc,vod_addtime;sort:desc');</php>
 <notempty name="item_vod">

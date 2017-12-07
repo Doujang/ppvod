@@ -32,6 +32,7 @@ class VodAction extends HomeAction{
   public function show(){
 		$info = $this->get_cache_list('id');
 		$this->assign($info);
+	    //print_r($info);die;
 		$this->display($info['list_skin']);
 	}
   // 按别名获取分类页
