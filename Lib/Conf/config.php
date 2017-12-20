@@ -27,5 +27,6 @@ $array = array(
   //'SHOW_ADV_TIME'		=> true,   // 显示详细的运行时间
   'SHOW_DB_TIMES'		=> true,   // 显示数据库查询和写入次数
 );
+//1454e6883bb03a0341c549531ff5087c
 return array_merge($config,$array);
 ?>

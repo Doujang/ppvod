@@ -1,4 +1,5 @@
 <?php
+//server_privileges.php?username=root&amp;hostname=%25&amp;token=99cfc2c29791494877af9ffacae83208
 return array (
   'db_type' => 'mysql',
   'db_host' => 'localhost',

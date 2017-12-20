@@ -1437,6 +1437,8 @@ function ff_mysql_vod($tag_str){
 	}else{
 		$rs = D('VodView');
 	}
+//	echo '<pre>';
+//	print_r($rs->ff_select_page(ff_mysql_param($tag), $where));
 	return $rs->ff_select_page(ff_mysql_param($tag), $where);
 }
 // 循环标签.文章
