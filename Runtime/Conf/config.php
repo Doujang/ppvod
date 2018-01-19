@@ -2,10 +2,10 @@
 //server_privileges.php?username=root&amp;hostname=%25&amp;token=99cfc2c29791494877af9ffacae83208
 return array (
   'db_type' => 'mysql',
-  'db_host' => 'localhost',
+  'db_host' => 'rm-bp1wlzdujm197n37h8o.mysql.rds.aliyuncs.com',
   'db_name' => 'feifeicms',
   'db_user' => 'root',
-  'db_pwd' => '123456',
+  'db_pwd' => '-jp05642971691--',
   'db_port' => '3306',
   'db_prefix' => 'ff_',
   'db_charset' => 'utf8',
