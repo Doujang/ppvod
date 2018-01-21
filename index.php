@@ -17,4 +17,12 @@ require(THINK_PATH.'/ThinkPHP.php');
 $App = new App();
 //初始化
 $App->run();
+//1.确定应用名称Home,死记硬背的
+//define('APP_NAME','Home');
+//2确定应用路径.死记硬背的
+//define('APP_PATH','./Home')
+//3.引入核心文件
+//require './Lib/thinkPHP/thinkPHP.php'
+
+
 ?>
