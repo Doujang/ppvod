@@ -5,7 +5,7 @@ return array (
   'db_host' => 'rm-bp1wlzdujm197n37h8o.mysql.rds.aliyuncs.com',
   'db_name' => 'feifeicms',
   'db_user' => 'root',
-  'db_pwd' => '-jp05642971691--',
+  'db_pwd' => '',
   'db_port' => '3306',
   'db_prefix' => 'ff_',
   'db_charset' => 'utf8',
