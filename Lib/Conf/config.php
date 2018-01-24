@@ -22,10 +22,16 @@ $array = array(
 	//3.3 add
 	'TMPL_DETECT_THEME'=>true,
 	'VAR_TEMPLATE'=>"theme",
-	'APP_DEBUG'       => false,    // 是否开启调试模式,开启将不生成缓存文件,修改立即生效.可在入口文件中定义常量开启.
+	'APP_DEBUG'       => true,    // 是否开启调试模式,开启将不生成缓存文件,修改立即生效.可在入口文件中定义常量开启.
   //'SHOW_RUN_TIME'		=> true,   // 运行时间显示
   //'SHOW_ADV_TIME'		=> true,   // 显示详细的运行时间
     'SHOW_DB_TIMES'		=> true,   // 显示数据库查询和写入次数
+	'TMPL_PARSE_STRING'  =>array(//定义模板替换
+			'__PUBLIC__' => '/Public', // 更改默认的/Public 替换规则
+			'__JS__'     => '/Public/js', // 增加新的JS类库路径替换规则
+			'__UPLOAD__' => '/Uploads', // 增加新的上传路径替换规则
+			'__CSS__' => '/Public/css', // 增加新的上传路径替换规则
+	)
 );
 //1454e6883bb03a0341c549531ff5087c
 return array_merge($config,$array);
